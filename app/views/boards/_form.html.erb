@@ -1,0 +1,12 @@
+<%= simple_form_for @board do |f| %>
+  <%= f.input :email %>
+  <%= f.input :name, label: 'Board Name' %>
+  <%= f.input :width %>
+  <%= f.input :height %>
+  <%= f.input :no_of_mines %>
+  <div class="row">
+    <div class="col d-grid">
+      <%= f.submit 'Generate Board', class: 'btn btn-outline-success btn-block' %>
+    </div>
+  </div>
+<% end %>
