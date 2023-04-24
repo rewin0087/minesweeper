@@ -12,7 +12,7 @@ class BoardsController < ApplicationController
       redirect_to board_path(@board), notice: 'Board was successfully generated'
     else
       @boards = Board.recent
-      render 'home'
+      render 'home', status: :unprocessable_entity
     end
   end
 

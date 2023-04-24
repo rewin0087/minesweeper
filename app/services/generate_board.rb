@@ -20,5 +20,4 @@ class GenerateBoard
   private
 
     attr_reader :board, :x_axis, :y_axis
-
 end
